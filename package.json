@@ -1,0 +1,27 @@
+{
+  "name": "parcel-plugin-monkberry",
+  "version": "1.0.0",
+  "description": "A parcel plugin for monkberry",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andruschka/parcel-plugin-monkberry.git"
+  },
+  "author": {
+    "name": "andruschka",
+    "url": "https://92digital.com"
+  },
+  "keywords": [
+    "parcel",
+    "bundler",
+    "monkberry",
+    "compiler"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andruschka/parcel-plugin-monkberry/issues"
+  },
+  "homepage": "https://github.com/andruschka/parcel-plugin-monkberry#readme"
+}
