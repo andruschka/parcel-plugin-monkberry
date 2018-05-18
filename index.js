@@ -1,3 +1,3 @@
 module.exports = function (bundler) {
-  bundler.addAssetType('monk', require.resolve('./MonkAsset'));
+  bundler.addAssetType('.monk', require.resolve('./MonkAsset'));
 };

@@ -1,16 +1,13 @@
-const { compile } = require('riot-compiler');
+const Compiler = require('monkberry').Compiler;
 const JSAsset = require('parcel-bundler/src/assets/JSAsset');
-// const preamble = "const riot = require('riot');\n";
 
 class MonkAsset extends JSAsset {
 
   async parse(inputCode) {
-    const riotOpts = {};
+    const compiler = new Compiler();
 
-    let code = compile(inputCode, riotOpts, this.name);
-    // code = `${preamble}${code}`;
-    this.contents = code;
-
+    const node = compiler.compile(this.name, inputCode);
+    this.contents = node.toString();
     return super.parse(this.contents);
   }
 }
